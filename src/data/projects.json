@@ -1,0 +1,20 @@
+[
+  {
+    "name": "Project 1",
+    "description": "This is the first project",
+    "technologies": ["TypeScript"],
+    "github": "https://github.com/cmirza/project1"
+  },
+  {
+    "name": "Project 2",
+    "description": "This is the second project",
+    "technologies": ["Python"],
+    "github": "https://github.com/cmirza/project2"
+  },
+  {
+    "name": "Project 3",
+    "description": "This is the third project",
+    "technologies": ["Java"],
+    "github": "https://github.com/cmirza/project3"
+  }
+]
