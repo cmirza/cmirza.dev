@@ -1,5 +1,5 @@
-import React, { useEffect, useState } from "react";
-import projectData from "../data/projects.json";
+import React, { useEffect, useState } from 'react';
+import projectData from '../data/projects.json';
 
 interface Project {
   name: string;

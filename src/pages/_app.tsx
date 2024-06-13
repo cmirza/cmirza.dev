@@ -1,6 +1,24 @@
 import "@/styles/globals.css";
-import type { AppProps } from "next/app";
+import { AppProps } from "next/app";
+import { ThemeProvider } from "next-themes";
+import { useEffect, useState } from "react";
 
-export default function App({ Component, pageProps }: AppProps) {
-  return <Component {...pageProps} />;
-}
+const MyApp = ({ Component, pageProps }: AppProps) => {
+  const [mounted, setMounted] = useState(false);
+
+  // This ensures that the correct theme is only rendered on the client side.
+  // This prevents a mismatch between the server and client during the hydration process.
+  useEffect(() => {
+    setMounted(true);
+  }, []);
+
+  if (!mounted) return null;
+
+  return (
+    <ThemeProvider attribute="class">
+      <Component {...pageProps} />
+    </ThemeProvider>
+  );
+};
+
+export default MyApp;
