@@ -13,9 +13,16 @@ const Home: React.FC = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Header />
-      <main className="p-4">
-        <h1 className="text-3xl font-bold">Welcome to my website!</h1>
-        <Projects />
+      <main className="p-4 flex flex-col items-center">
+        <div className="max-w-lg w-full">
+          <section className="mb-8">
+            <p>
+              Hey there! I'm Cameron, a software developer based in Portland Oregon.
+              When I'm not in front of a computer, I enjoy reading, music, art, and hiking.
+            </p>
+          </section>
+          <Projects />
+        </div>
       </main>
       <Footer />
     </div>

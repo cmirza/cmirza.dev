@@ -1,4 +1,4 @@
-import "@/styles/globals.css";
+import "../styles/globals.css";
 import { AppProps } from "next/app";
 import { ThemeProvider } from "next-themes";
 import { useEffect, useState } from "react";
@@ -11,7 +11,7 @@ const MyApp = ({ Component, pageProps }: AppProps) => {
   useEffect(() => {
     setMounted(true);
   }, []);
-
+  // This ensures the HTML content matches between client and server
   if (!mounted) return null;
 
   return (

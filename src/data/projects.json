@@ -2,7 +2,7 @@
   {
     "name": "Project 1",
     "description": "This is the first project",
-    "technologies": ["TypeScript"],
+    "technologies": ["JavaScript"],
     "github": "https://github.com/cmirza/project1"
   },
   {
