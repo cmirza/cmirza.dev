@@ -1,21 +1,30 @@
-import React from 'react';
-import DarkModeToggle from './DarkModeToggle';
+import React from "react";
+import DarkModeToggle from "./DarkModeToggle";
 
 const Header: React.FC = () => {
-    return (
-        <header className="bg-gray-900 text-white p-4">
-          <div className="max-w-lg mx-auto flex justify-between items-center">
-            <div>
-              <h1 className="text-2xl font-bold">Cameron Mirza</h1>
-              <div className="flex space-x-4">
-                <a href="/blog" className="text-blue-400 hover:underline">blog</a>
-                <a href="/resume" className="text-blue-400 hover:underline">resume</a>
-              </div>
-            </div>
-            <DarkModeToggle />
+  return (
+    <header className="p-4">
+      <div className="max-w-xl mx-auto flex justify-between items-center">
+        <div className="flex items-center space-x-4">
+          <div className="w-14 h-14 rounded-full overflow-hidden">
+            <img
+              src="https://github.com/cmirza.png"
+              alt="avatar"
+              className="w-full h-full object-cover"
+            />
           </div>
-        </header>
-      );
+          <div>
+            <h1 className="text-2xl font-bold">Cameron Mirza</h1>
+            <div className="flex space-x-2">
+              <a href="/blog">blog</a>
+              <a href="/resume">resume</a>
+            </div>
+          </div>
+        </div>
+        <DarkModeToggle />
+      </div>
+    </header>
+  );
 };
 
 export default Header;
