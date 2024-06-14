@@ -1,20 +1,23 @@
 [
   {
-    "name": "Project 1",
+    "name": "Birthday Whisperer",
     "description": "This is the first project",
     "technologies": ["JavaScript", "React", "MongoDB"],
-    "github": "https://github.com/cmirza/project1"
+    "github": [
+      "https://github.com/cmirza/birthday-whisperer-frontend",
+      "https://github.com/cmirza/birthday-whisperer-backend"
+    ]
   },
   {
     "name": "Project 2",
     "description": "This is the second project",
     "technologies": ["Python"],
-    "github": "https://github.com/cmirza/project2"
+    "github": ["https://github.com/cmirza/project2"]
   },
   {
     "name": "Project 3",
     "description": "This is the third project",
     "technologies": ["Java"],
-    "github": "https://github.com/cmirza/project3"
+    "github": ["https://github.com/cmirza/project3"]
   }
 ]

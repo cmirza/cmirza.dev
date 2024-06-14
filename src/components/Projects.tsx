@@ -13,7 +13,7 @@ interface Project {
   name: string;
   description: string;
   technologies: string[];
-  github: string;
+  github: string[];
 }
 
 const iconMap: { [key: string]: JSX.Element } = {
@@ -51,15 +51,13 @@ const Projects: React.FC = () => {
                 ))}
               </div>
             </div>
-            <a
-              href={project.github}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="flex items-center"
-            >
-              <FaGithub className="mr-1" />{" "}
-              {project.github.replace(/^https?:\/\//, "")}
-            </a>
+            <div className="flex flex-col">
+              {project.github.map((link, i) => (
+                <a key={i} href={link} target="_blank" rel="noopener noreferrer" className="flex items-center">
+                  <FaGithub className="mr-1" /> {link.replace(/^https?:\/\//, "")}
+                </a>
+              ))}
+            </div>
           </div>
         ))}
       </div>
