@@ -7,6 +7,7 @@ import {
   FaJava,
   FaGithub,
 } from "react-icons/fa";
+import { SiMongodb } from "react-icons/si";
 
 interface Project {
   name: string;
@@ -16,10 +17,11 @@ interface Project {
 }
 
 const iconMap: { [key: string]: JSX.Element } = {
-  javascript: <FaJsSquare className="text-yellow-500" />,
-  react: <FaReact className="text-blue-500" />,
-  python: <FaPython className="text-green-500" />,
-  java: <FaJava className="text-red-500" />,
+  javascript: <FaJsSquare className="text-yellow-500" title="JavaScript"/>,
+  react: <FaReact className="text-blue-500" title="React"/>,
+  python: <FaPython className="text-green-500" title="Python"/>,
+  java: <FaJava className="text-red-500" title="Java"/>,
+  mongodb: <SiMongodb className="text-green-500" title="MongoDB"/>,
 };
 
 const Projects: React.FC = () => {

@@ -9,7 +9,7 @@ const Home: React.FC = () => {
     <div>
       <Head>
         <title>Cameron Mirza</title>
-        <meta name="description" content="Cameron Mirza's personal website" />
+        <meta name="description" content="Cameron Mirza Portfolio" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Header />
