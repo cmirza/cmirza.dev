@@ -1,23 +1,26 @@
 [
   {
     "name": "Birthday Whisperer",
-    "description": "This is the first project",
-    "technologies": ["JavaScript", "React", "MongoDB"],
+    "description": "Fullstack application that allows users to create SMS based birthday reminders.",
+    "technologies": ["TypeScript", "React", "NodeJS", "Express", "MongoDB"],
     "github": [
       "https://github.com/cmirza/birthday-whisperer-frontend",
       "https://github.com/cmirza/birthday-whisperer-backend"
     ]
   },
   {
-    "name": "Project 2",
-    "description": "This is the second project",
-    "technologies": ["Python"],
-    "github": ["https://github.com/cmirza/project2"]
+    "name": "CodeCrate",
+    "description": "Fullstack application for managing code snippets",
+    "technologies": ["TypeScript", "React", "NodeJS", "Express", "MongoDB"],
+    "github": [
+      "https://github.com/cmirza/codecrate-frontend",
+      "https://github.com/cmirza/codecrate-frontend"
+    ]
   },
   {
-    "name": "Project 3",
-    "description": "This is the third project",
-    "technologies": ["Java"],
-    "github": ["https://github.com/cmirza/project3"]
+    "name": "Scribbler",
+    "description": "A hybrid static/dynamic blogging platform that generates and serves blog posts by converting Markdown files to HTML.",
+    "technologies": ["TypeScript", "NodeJS", "Express"],
+    "github": ["https://github.com/cmirza/scribbler"]
   }
 ]
