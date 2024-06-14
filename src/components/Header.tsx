@@ -1,4 +1,5 @@
 import React from "react";
+import Image from "next/image";
 import DarkModeToggle from "./DarkModeToggle";
 
 const Header: React.FC = () => {
@@ -7,10 +8,12 @@ const Header: React.FC = () => {
       <div className="max-w-xl mx-auto flex justify-between items-center">
         <div className="flex items-center space-x-4">
           <div className="w-14 h-14 rounded-full overflow-hidden">
-            <img
+            <Image
               src="https://github.com/cmirza.png"
               alt="avatar"
-              className="w-full h-full object-cover"
+              width={40}
+              height={40}
+              className="object-cover"
             />
           </div>
           <div>

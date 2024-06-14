@@ -17,8 +17,8 @@ const Home: React.FC = () => {
         <div className="max-w-xl w-full">
           <section className="mb-8">
             <p>
-              Hey there! I'm Cameron, a software developer based in Portland
-              Oregon. When I'm not in front of a computer, I enjoy reading,
+              Hey there! I&apos;m Cameron, a software developer based in Portland
+              Oregon. When I&apos;m not in front of a computer, I enjoy reading,
               music, art, and hiking.
             </p>
           </section>
