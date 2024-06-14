@@ -16,8 +16,8 @@ const Header: React.FC = () => {
           <div>
             <h1 className="text-2xl font-bold">Cameron Mirza</h1>
             <div className="flex space-x-2">
-              <a href="/blog">blog</a>
-              <a href="/resume">resume</a>
+              <a href="https://cmirza.substack.com">blog</a>
+              <a href="/resume.pdf">resume</a>
             </div>
           </div>
         </div>

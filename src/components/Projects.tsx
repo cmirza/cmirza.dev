@@ -2,23 +2,27 @@ import React, { useEffect, useState } from "react";
 import projectData from "../data/projects.json";
 import {
   FaJsSquare,
+  FaNodeJs,
   FaReact,
   FaPython,
   FaJava,
   FaGithub,
 } from "react-icons/fa";
-import { SiMongodb } from "react-icons/si";
+import { SiTypescript, SiExpress, SiMongodb } from "react-icons/si";
 
 interface Project {
   name: string;
   description: string;
   technologies: string[];
-  github: string;
+  github: string[];
 }
 
 const iconMap: { [key: string]: JSX.Element } = {
   javascript: <FaJsSquare className="text-yellow-500" title="JavaScript"/>,
+  typescript: <SiTypescript className="text-blue-500" title="TypeScript"/>,
+  nodejs: <FaNodeJs className="text-green-500" title="NodeJS"/>,
   react: <FaReact className="text-blue-500" title="React"/>,
+  express: <SiExpress className="dark:text-white text-black" title="Express"/>,
   python: <FaPython className="text-green-500" title="Python"/>,
   java: <FaJava className="text-red-500" title="Java"/>,
   mongodb: <SiMongodb className="text-green-500" title="MongoDB"/>,
@@ -51,15 +55,13 @@ const Projects: React.FC = () => {
                 ))}
               </div>
             </div>
-            <a
-              href={project.github}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="flex items-center"
-            >
-              <FaGithub className="mr-1" />{" "}
-              {project.github.replace(/^https?:\/\//, "")}
-            </a>
+            <div className="flex flex-col">
+              {project.github.map((link, i) => (
+                <a key={i} href={link} target="_blank" rel="noopener noreferrer" className="flex items-center">
+                  <FaGithub className="mr-1" /> {link.replace(/^https?:\/\//, "")}
+                </a>
+              ))}
+            </div>
           </div>
         ))}
       </div>
