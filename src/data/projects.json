@@ -10,7 +10,7 @@
   },
   {
     "name": "CodeCrate",
-    "description": "Fullstack application for managing code snippets",
+    "description": "Fullstack application for managing code snippets.",
     "technologies": ["TypeScript", "React", "NodeJS", "Express", "MongoDB"],
     "github": [
       "https://github.com/cmirza/codecrate-frontend",

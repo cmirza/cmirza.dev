@@ -7,12 +7,12 @@ const Header: React.FC = () => {
     <header className="p-4">
       <div className="max-w-xl mx-auto flex justify-between items-center">
         <div className="flex items-center space-x-4">
-          <div className="w-14 h-14 rounded-full overflow-hidden">
+          <div className="w-13 h-13 rounded-full overflow-hidden">
             <Image
               src="https://github.com/cmirza.png"
               alt="avatar"
-              width={40}
-              height={40}
+              width={50}
+              height={50}
               className="object-cover"
             />
           </div>
