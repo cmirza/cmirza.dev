@@ -6,7 +6,8 @@
     "github": [
       "https://github.com/cmirza/birthday-whisperer-frontend",
       "https://github.com/cmirza/birthday-whisperer-backend"
-    ]
+    ],
+    "deployedUrl": "https://birthday-whisperer-frontend.onrender.com/"
   },
   {
     "name": "CodeCrate",
